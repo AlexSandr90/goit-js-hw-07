@@ -52,7 +52,11 @@ destroy.addEventListener('click', () => {
 });
 
 create.addEventListener('click', () => {
-  const blocks = generatedBlocks(countOfBlocks);
-  boxesContainer.innerHTML = '';
-  boxesContainer.insertAdjacentHTML('beforeend', generatedLayout(blocks));
+  if (countOfBlocks > 0) {
+    const blocks = generatedBlocks(countOfBlocks);
+    boxesContainer.innerHTML = '';
+    boxesContainer.insertAdjacentHTML('beforeend', generatedLayout(blocks));
+    blockCounts.value = defaultBlockCountsValue;
+    countOfBlocks = 0;
+  }
 });
