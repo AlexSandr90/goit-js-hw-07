@@ -5,11 +5,11 @@
     gap: 48px 24px;
   }
   
-  .galery-item {
+  .gallery-item {
     cursor: pointer;
   }
   
-  .galery-item-image {
+  .gallery-item-image {
     display: flex;
     width: 360px;
     height: 300px;

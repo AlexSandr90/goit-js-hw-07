@@ -5,8 +5,8 @@ const getInputValue = event => {
   const trimmedValue = event.target.value.trim();
 
   trimmedValue.length > 0
-    ? (nameOutput.innerText = trimmedValue)
-    : (nameOutput.innerText = 'Anonymous');
+    ? (nameOutput.textContent = trimmedValue)
+    : (nameOutput.textContent = 'Anonymous');
 };
 
 nameInput.addEventListener('input', getInputValue);
